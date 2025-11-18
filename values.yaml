@@ -1,0 +1,11 @@
+createNamespace: "true"
+serviceType: "ClusterIP"
+serviceTargetPort: 8080
+image: "nikpharness/harness-gitops-workshop:nikp-gitops-22"
+replicas: 2
+name: "frontend"
+servicePort: 8080
+env:
+  config:
+    HARNESS_BUILD: "1"
+sename: "nikp"
